@@ -1,1 +1,862 @@
+@import url('https://fonts.googleapis.com/css2?family=Coiny&family=IBM+Plex+Mono:wght@300;400&family=Roboto:wght@400;700&display=swap');
 
+/*Colores -var*/
+:root {
+    --naranja-pescar: #FD7202;
+    --azul-pescar: #005CBD;
+    --index-background: #1c1e27;
+    --gris-pescar: rgba(255, 255, 255, 0.7);
+}
+
+/*Colores-signos*/
+.barras {
+    color: var(--naranja-pescar);
+}
+
+.punto {
+    color: var(--azul-pescar);
+}
+
+.comillas {
+    color: var(--naranja-pescar);
+}
+
+/*Formato*/
+.cursiva {
+    font-style: italic;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+/*H1 - h2 - h3*/
+h1 {
+    display: none;
+}
+
+.about-us-a h2 {
+    margin: 15px 0 40px 50px;
+    text-transform: uppercase;
+    font-family: 'IBM Plex Mono';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 3em;
+    line-height: 62px;
+    text-align: center;
+    color: #ffffff;
+}
+
+.que-es-pescar h2 {
+    margin: 15px 0 40px 50px;
+    text-transform: uppercase;
+    font-family: 'IBM Plex Mono';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 3em;
+    line-height: 62px;
+    color: #ffffff;
+}
+
+.formacion-it h2 {
+    margin: 15px 0 40px 50px;
+    text-transform: uppercase;
+    font-family: 'IBM Plex Mono';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 3em;
+    line-height: 62px;
+    color: #ffffff;
+}
+
+.formacion-p h2 {
+    margin: 15px 0 40px 50px;
+    text-transform: uppercase;
+    font-family: 'IBM Plex Mono';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 3em;
+    line-height: 62px;
+    color: #ffffff;
+}
+
+.contacto-a h2 {
+    margin-bottom: 60px;
+    text-transform: uppercase;
+    font-family: 'IBM Plex Mono';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 3em;
+    line-height: 62px;
+    color: #ffffff;
+}
+
+/*Paragraph*/
+
+.about-us p {
+    font-size: 1.2em;
+    color: white;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 50px;
+    line-height: 23px;
+    text-align: center;
+}
+
+.que-es-pescar p {
+    font-size: 1.2em;
+    color: white;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 50px;
+    line-height: 23px;
+    text-align: center;
+}
+
+.form-it p {
+    font-size: 1.2em;
+    color: white;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 50px;
+    line-height: 23px;
+    text-align: center;
+}
+
+.formacion-p p {
+    font-size: 1.2em;
+    color: white;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 50px;
+    line-height: 23px;
+    text-align: center;
+}
+
+/* Separador */
+.separador-1 img {
+    height: 460px;
+    display: flex;
+}
+
+.separador-2 img {
+    height: 460px;
+    display: flex;
+}
+
+/*Separador final*/
+.linea1 {
+    border: 2px solid black;
+    margin-bottom: 8px;
+}
+
+.linea2 {
+    border: 10px solid black;
+}
+
+.separador3 {
+    margin-top: 130px;
+    ;
+}
+
+/*--------------------------------------------------------------------------*/
+/*Comienza inicio*/
+
+li,
+a,
+button {
+    text-decoration: none;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid hsla(0, 1%, 65%, 0.5)
+}
+
+.logo img {
+    height: 55px;
+    cursor: pointer;
+    margin-left: 60px;
+    padding-bottom: 2px;
+}
+
+.nav-links {
+    list-style: none;
+}
+
+.nav-links li {
+    display: inline-block;
+    padding: 0px 20px;
+    margin: 0 30px;
+    font-size: 17px;
+    font-family: 'IBM Plex Mono', monospace;
+}
+
+.nav-links li:hover {
+    transition: all .2s ease-in-out;
+    transform: scale(1.05);
+}
+
+.nav-links li a {
+    color: black;
+}
+
+.nav-links li a:hover {
+    color: var(--naranja-pescar)
+}
+
+.acceder {
+    padding: 9px 25px;
+    background-color: var(--naranja-pescar);
+    border: none;
+    border-radius: 5px;
+    height: 45px;
+    margin-right: 160px;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.acceder:hover {
+    transition: all .2s ease-in-out;
+    transform: scale(1.05);
+}
+
+.frase-header {
+    margin: 15px;
+    display: flex;
+    flex-direction: column;
+    height: 45px;
+    text-align: center;
+    position: relative;
+}
+
+.frase-header p {
+    font-family: 'IBM Plex Mono', monospace;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.search-bar {
+    position: absolute;
+    right: 0;
+    margin-right: 35px;
+    margin-top: 5px;
+}
+
+.search-bar input {
+    height: 35px;
+    padding-left: 37px;
+    border: 2px solid rgb(172, 199, 224);
+    border-radius: 5px;
+    width: 250px;
+}
+
+.search-bar input:focus {
+    outline: none;
+}
+
+.search i {
+    height: 20px;
+    border: none;
+    position: absolute;
+    margin-left: -240px;
+    margin-top: 14px;
+    color: var(--naranja-pescar);
+}
+
+.background-banner img {
+    height: 835px;
+    width: 100%;
+}
+
+/*Termina sección Inicio */
+/*-----------------------------------------------------------------------------------------------------------------------------------------*/
+/*Comienza Acerca de Nosotros*/
+
+/* Article Acerca-de-nosotros */
+.about-us {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-right: 00px;
+    width: 100%;
+}
+
+.img-about-us img {
+    height: 100px;
+    margin-top: 100px;
+    margin-bottom: 20px;
+}
+
+.about_us_icons {
+    display: inline;
+}
+
+.logo-about {
+    height: 100px;
+    margin-top: 200px;
+    margin-bottom: 15px;
+    margin-left: 270px;
+}
+
+.img-about-us{
+    text-align: center;
+}
+
+.link {
+    color: #ffffff;
+    text-decoration: underline var(--naranja-pescar);
+}
+
+.link:hover {
+    color: var(--naranja-pescar);
+}
+
+.text {
+    margin-left: 90px;
+    margin-bottom: 200px;
+}
+
+.text p:first-child{
+    margin-bottom: 30px;
+}
+
+.text p:nth-child(2){
+    margin-bottom: 5px;
+}
+
+.text p:nth-child(3) {
+    margin-bottom: 5px;
+}
+
+.text p:nth-child(4) {
+    margin-bottom: 5px;
+}
+
+.text p:nth-child(5) {
+    margin-bottom: 30px;
+}
+
+/* Article LinkedIn */
+
+.linkedin {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 30%;
+    margin-left: 250px;
+}
+
+.logo-linkedin img {
+    height: 60px;
+    margin-top: 100px;
+    margin-bottom: 50px;
+    margin-left: 105px;
+}
+
+.link-2 {
+    color: #ffffff;
+}
+
+.link-2:hover {
+    color: var(--naranja-pescar);
+}
+
+.linkedIn-foto{
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 100px;
+    margin-bottom: 15px;
+}
+
+.linkedIn-foto p {
+    margin-left: 55px;
+    margin-top: 35px;
+}
+
+/*-----------------------------------------------------------------------------------------------------------------------------------------*/
+/*Comienza seccion que es pescar*/
+
+.que-es-pescar {
+    max-width: 1920px;
+    display: flex;
+    flex-direction: column;
+}
+
+#sobrepescar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 800px;
+    margin-left: 950px;
+    text-align: center;
+}
+
+#sobrepescar p {
+    margin-bottom: 0.7em;
+}
+
+.que-es-pescar .fundacion-pescar {
+    display: flex;
+    margin-bottom: 5em;
+    margin-top: 2em;
+}
+
+.que-es-pescar .fundacion-pescar div:first-child {
+    width: 18%;
+    display: block;
+    text-align: center;
+    background-color: #FFD147;
+    border-radius: 10px;
+    border: 5px solid black;
+    box-shadow: -10px 7px 3px 1px rgba(0, 0, 0, 0.87);
+    margin-left: 26em;
+    margin-top: 0.2em;
+    margin-bottom: 1em;
+    padding-top: 2.5em;
+    padding-bottom: 2.5em;
+}
+
+.fundacion-pescar div:first-of-type>div {
+    width: 70% !important;
+    background-color: white !important;
+    border: 6px solid black !important;
+    border-radius: 10px;
+    box-shadow: none !important;
+    padding: 7px 0 7px 0 !important;
+    margin: auto !important;
+}
+
+.fundacion-pescar div:first-of-type p {
+    color: black;
+    font-size: 28px;
+    font-weight: bold;
+    margin: 1.2em 0 2em 0;
+    font-family: 'IBM Plex Mono';
+}
+
+.fundacion-pescar div:first-of-type a:nth-child(3) {
+    color: black;
+    background-color:  #e9f5ff;
+    border: 5px solid rgb(0, 0, 0);
+    border-radius: 10px;
+    padding: 00.3em 1em 0.3em 1em;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: 'IBM Plex Mono';
+}
+
+.fundacion-pescar div:first-of-type a:nth-child(3):hover {
+    color: var(--naranja-pescar);
+    background-color: white;
+    border: 6px solid var(--naranja-pescar);
+}
+
+.fundacion-pescar div:last-child {
+    margin-left: 3.0em;
+    margin-top: -3em;
+}
+
+.que-es-pescar .fundacion-pescar a {
+    color: white;
+}
+
+/*Termina seccion que es pescar*/
+/*******************************************************************************************************************************************************************/
+/* Comienza seccion formacion it*/
+
+.img-form img {
+    height: 100px;
+}
+
+.form-it {
+    width: 100%;
+    background-color: #1c1e27
+}
+
+.formacion-it {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 900px;
+}
+
+.formacion-it p:last-child {
+    margin-top: 30px;
+}
+
+.flecha {
+    color: var(--naranja-pescar);
+    text-align: center;
+    font-family: 'IBM Plex Mono';
+    font-style: normal;
+    font-weight: 600;
+    line-height: 21px;
+}
+
+.herramientas-it {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.link-h {
+    color: var(--naranja-pescar);
+    font-style: normal;
+    font-size: 18px;
+    font-weight: 400px;
+    Line height: 21px;
+    font-family: 'IBM Plex Mono';
+}
+
+.link-h:hover {
+    color: var(--azul-pescar)
+}
+
+.icon-herramientas-it {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    background-color: #1c1e27
+}
+
+.herramientas-it h3 {
+    text-transform: uppercase;
+    margin-bottom: 5em;
+    margin-left: 00px;
+    color: rgba(255, 255, 255, 0.7);
+    font-family: 'IBM Plex Mono';
+    font-style: normal;
+    font-weight: 600px;
+    line-height: 21px;
+}
+
+.separador {
+    display: none;
+    /*reubicar despues*/
+}
+
+
+.items-herramientas img {
+    height: 85px;
+}
+
+.items-herramientas {
+    background-color: #1c1e27;
+    width: 18%;
+    margin-left: 50px;
+    margin-right: 100px;
+    margin-bottom: 70px;
+}
+
+.items-herramientas p {
+    display: block;
+    color: var(--naranja-pescar);
+    font-size: 1.3em;
+}
+
+/*Termina sección formación it */
+/*-----------------------------------------------------------------------------------------------------------------------------------------*/
+
+.form-personal {
+    width: 100%;
+    background-color: #1c1e27;
+}
+
+.formacion-p {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 950px
+}
+
+.herramientas-personal h3 {
+    text-transform: uppercase;
+    margin-bottom: 5em;
+    margin-right: 580px;
+    color: rgba(255, 255, 255, 0.7);
+    font-family: 'IBM Plex Mono';
+    font-style: normal;
+    font-weight: 600px;
+    line-height: 21px;
+}
+
+.herramientas-personal {
+    margin-top: 30px;
+    text-align: center;
+
+}
+
+.icon-herramientas-personal {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    background-color: #1c1e27;
+    ;
+
+}
+
+.icon-herramientas-personal img {
+    height: 85px;
+}
+
+.icon-herramientas-personal p {
+    color: var(--naranja-pescar);
+    font-size: 1.3em;
+}
+
+.icon-gaming-personal {
+    background-color: #1c1e27;
+    width: 18%;
+    margin-left: 50px;
+    margin-right: 100px;
+    margin-bottom: 70px;
+}
+
+
+/*-----------------------------------------------------------------------------------------------------------------------------------------*/
+
+/*MICA CSS*/
+
+main {
+    background-color: #1c1e27
+}
+
+.img-contacto img {
+    height: 100px;
+    margin-top: 100px;
+    margin-bottom: 20px;
+}
+
+.contacto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/*COMIENZO CON EL FORM*/
+
+form {
+    width: 400px;
+}
+
+input,
+textarea {
+    width: 400px;
+    height: 27px;
+    resize: none;
+    background: #ffffffc9;
+    /*fondo de input*/
+    border: none;
+    border-radius: 5px;
+    padding: 20px;
+    /*Tamaño del box*/
+    font-size: 1.2em;
+    font-family: 'IBM Plex Mono';
+    font-style: normal;
+    font-weight: 400;
+    text-align: center;
+    line-height: 21px;
+    text-align: left;
+    color: #000000;
+    margin-bottom: 15px;
+}
+
+textarea {
+    height: 200px;
+}
+
+input,
+textarea:focus {
+    outline: none;
+    /*para que no marque los bordes cuando selecciono*/
+}
+
+#submit {
+    padding: 10px;
+    background-color: var(--naranja-pescar);
+    border: none;
+    border-radius: 5px;
+    width: 150px;
+    height: 50px;
+    cursor: pointer;
+    margin-left: 250px;
+    margin-bottom: 60px;
+
+    color: white;
+    font-weight: 600;
+    text-align: center;
+    line-height: 21px;
+}
+
+/*Modifiqué el cursor-hover*/
+#submit:hover {
+    transition: all .2s ease-in-out;
+    transform: scale(1.05);
+}
+
+.box {
+    /* Parrafo SemiBold */
+    font-family: 'IBM Plex Mono';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.2em;
+    /*con esto cambias el tamaño de la letra*/
+    line-height: 21px;
+    color: #ffffffc9;
+    /* Box negro*/
+    background: #000000;
+    border-radius: 5px;
+    padding: 10px;
+    display: inline-block;
+    margin-bottom: 15px;
+}
+
+
+/*-----------------------------------------------------------------------------------------------------------------------------------------*/
+/* Comienza Footer*/
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1920px;
+    height: 200px;
+    margin-right: 100px;
+    margin-left: 100px;
+}
+
+footer div {
+    display: inline-block;
+    justify-content: space-between;
+}
+
+footer div:first-of-type {
+    display: inline-block;
+}
+
+
+footer .logo {
+    background-image: url("/assets/logo_pescar.png");
+    background-repeat: no-repeat;
+    height: 120px;
+    width: 230px;
+}
+
+footer div ul {
+    text-decoration: none;
+    list-style: none;
+    align-items: center;
+    align-items: initial;
+}
+
+footer div:nth-child(2) {
+    margin-bottom: 35px;
+}
+
+footer div ul li:first-of-type {
+    color: var(--naranja-pescar);
+    text-transform: uppercase;
+    margin-bottom: 5px;
+}
+
+footer div ul li a {
+    font-family: 'IBM Plex Mono';
+}
+
+footer div ul li a:visited {
+    color: black;
+}
+
+footer div ul li:first-of-type a {
+    color: var(--naranja-pescar);
+    font-weight: bold;
+}
+
+footer div ul li a:hover {
+    color: var(--azul-pescar);
+}
+
+#redes li {
+    text-decoration: none;
+    list-style: none;
+    display: inline-block;
+    margin-bottom: 70px;
+}
+
+#redes li:first-of-type {
+    background-image: url("/assets/icono-twitter.png");
+    background-repeat: no-repeat;
+    font-size: 0;
+    width: 48px;
+    height: 48px;
+}
+
+#redes li:nth-of-type(2) {
+    background-image: url("/assets/icono-fb.png");
+    background-repeat: no-repeat;
+    font-size: 0;
+    width: 48px;
+    height: 48px;
+}
+
+#redes li:nth-of-type(3) {
+    background-image: url("/assets/icono-ln.png");
+    background-repeat: no-repeat;
+    width: 48px;
+    height: 48;
+}
+
+#redes li:last-of-type {
+    background-image: url("/assets/icono-youtube.png");
+    background-repeat: no-repeat;
+    width: 48px;
+    height: 48px;
+}
+
+#redes li:first-of-type:hover {
+    background-image: url("/assets/icono-twitter-hover.png");
+    background-repeat: no-repeat;
+    font-size: 0;
+    width: 48px;
+    height: 48px;
+}
+
+#redes li:nth-of-type(2):hover {
+    background-image: url("/assets/icono-fb-hover.png");
+    background-repeat: no-repeat;
+    font-size: 0;
+    width: 48px;
+    height: 48px;
+}
+
+#redes li:nth-of-type(3):hover {
+    background-image: url("/assets/icono-ln-hover.png");
+    background-repeat: no-repeat;
+    width: 48px;
+    height: 48;
+}
+
+#redes li:last-of-type:hover {
+    background-image: url("/assets/icono-youtube-hover.png");
+    background-repeat: no-repeat;
+    width: 48px;
+    height: 48px;
+}
+
+#redes a {
+    width: 48px;
+    height: 48px;
+    font-size: 0;
+    display: block;
+}
